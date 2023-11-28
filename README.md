@@ -1,5 +1,5 @@
 ```
-Nmae:M.Ashwin Akash
+Name:M.Ashwin Akash
 Reference number:23009906
 ```
 # Exp-02-Implementation of Half Adder and Full Adder circuit
