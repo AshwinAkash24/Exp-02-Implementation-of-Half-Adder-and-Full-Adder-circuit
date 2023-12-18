@@ -42,25 +42,23 @@ If the output is 1, then the led glows.
 # Program:
 ```
 HALF ADDER:
-module Halfadder(a,b,sum,carry);
+module halfadderas(a,b,sum,carry);
 input a,b;
 output sum,carry;
 assign sum=a^b;
-assign carry=a*b;
+assign carry=a&b;
 endmodule
-
-FULLADDER:
-module fulladder(a,b,c,sum,carry);
+FULL ADDER:
+module fulladderas(a,b,c,sum,carry);
 input a,b,c;
 output sum,carry;
 assign sum=a^b^c;
-assign carry=a*b+b*c+c*a;
+assign carry=a&b|b&c|c&a;
 endmodule
-
 ```
 # RTL realization:
-![Screenshot 2023-11-28 105145](https://github.com/AshwinAkash24/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/144979248/04fb1e16-e207-4a80-83e4-51664d70f902)
-# ![Screenshot 2023-11-28 110310](https://github.com/AshwinAkash24/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/144979248/c8a4e0e3-9f3a-4141-8343-4ab5f2161294)
+![halfaddera(1)](https://github.com/AshwinAkash24/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/144979248/37dd987c-bada-4f79-addf-77c71c83b02a)
+# ![fulladdera(1)](https://github.com/AshwinAkash24/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/144979248/cf4d80e2-ac83-44f7-9491-7a3ee0c5962e)
 
 # Truth Table:
 ![Screenshot 2023-11-28 105603](https://github.com/AshwinAkash24/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/144979248/1ac5c40a-250d-4b9d-9e8a-3fe0bd41fff2)
